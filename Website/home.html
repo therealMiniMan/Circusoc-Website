@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar need to link to the other pages once created -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BLOG</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="shows.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHOWS</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="blog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BLOG</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="shows.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SHOWS</a>
+
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The main section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Circusoc</h2>
+    <p class="w3-opacity"><i>Run away with us</i></p>
+    <p class="w3-justify">BEAN HAS DONE A THING AND CREATED A WEBSITE BASK IN MY GLORY. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-3">
+        <p class="w3-opacity"> Our exec team </p>
+      <div class="w3-third">
+        <p>President</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Harlym" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Vice President</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Alysha" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Arc Delegate</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Jack" style="width:60%">
+      </div>
+      <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Event Manager</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Ben" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Treasurer</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Sienna" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Safety Manager</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Ian" style="width:60%">
+      </div>
+        <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Secretary</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Richard" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Gear Manager</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Jezza" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Web Master</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Sam" style="width:60%">
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+
+  <!-- Ticket Modal include when we have shows -->
+<!--  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <span onclick="document.getElementById('ticketModal').style.display='none'"
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+-->
+
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -> need to link socials -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+
+  <a href="https://www.facebook.com/circusoc/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/unswcircussociety/"<i class="fa fa-instagram w3-hover-opacity"></i></a>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
