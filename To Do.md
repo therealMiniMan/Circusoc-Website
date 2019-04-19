@@ -1,5 +1,4 @@
 Contact us form - does that work
-
 On the shows page what do we want to do, have the whole videos or just small snippets (means more work)
  - change the button so that it plays the video or pictures
 
